@@ -4,13 +4,13 @@ void main(){
   {"id": 98523489, "nome": "Lucas Evangelista", "telefone": '11996541236'},
   {"id": 98523490, "nome": "Maria Teodoro", "telefone": '11944551236'},
   {"id": 98523491, "nome": "Isabel Santos", "telefone": null},
-];
+  ];
 
-List<Aluno> lista = alunos.map((map) => Aluno.fromMap(map)).toList();
+  List<Aluno> lista = alunos.map((m) => Aluno.fromMap(m)).toList();
 
-for(var a in lista){
-  print("Nome: ${a.nome}");
-}
+  for(var a in lista){
+    print("Nome: ${a.nome}");
+  }
 }
 
 class Aluno{
