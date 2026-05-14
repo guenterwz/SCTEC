@@ -8,9 +8,17 @@ void main(){
 
   List<Aluno> lista = alunos.map((m) => Aluno.fromMap(m)).toList();
 
+  //final lista = alunos.map((m){
+  //  return Aluno.fromMap(m);
+  //}).toList();
+
   for(var a in lista){
     print("Nome: ${a.nome}");
   }
+
+  //lista.forEach((a){
+  //  print("Aluno: ${a.nome}");
+  //});
 }
 
 class Aluno{
