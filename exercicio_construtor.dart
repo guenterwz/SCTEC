@@ -59,7 +59,6 @@ class Pedido{
     pagamento = Pagamento.fromMap(m['pagamento']),
     produto = Produto.fromMap(m['itens'])
   ;
-
 }
 
 final listaPedidos = [
